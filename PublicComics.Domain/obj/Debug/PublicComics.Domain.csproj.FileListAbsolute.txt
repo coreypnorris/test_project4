@@ -1,0 +1,10 @@
+E:\code\VisualStudio\PublicComics\PublicComics.Domain\bin\Debug\PublicComics.Domain.dll
+E:\code\VisualStudio\PublicComics\PublicComics.Domain\bin\Debug\PublicComics.Domain.pdb
+E:\code\VisualStudio\PublicComics\PublicComics.Domain\obj\Debug\PublicComics.Domain.csprojResolveAssemblyReference.cache
+E:\code\VisualStudio\PublicComics\PublicComics.Domain\obj\Debug\PublicComics.Domain.dll
+E:\code\VisualStudio\PublicComics\PublicComics.Domain\obj\Debug\PublicComics.Domain.pdb
+E:\Code\VisualStudioProjects\PublicComics\PublicComics.Domain\bin\Debug\PublicComics.Domain.dll
+E:\Code\VisualStudioProjects\PublicComics\PublicComics.Domain\bin\Debug\PublicComics.Domain.pdb
+E:\Code\VisualStudioProjects\PublicComics\PublicComics.Domain\obj\Debug\PublicComics.Domain.csprojResolveAssemblyReference.cache
+E:\Code\VisualStudioProjects\PublicComics\PublicComics.Domain\obj\Debug\PublicComics.Domain.dll
+E:\Code\VisualStudioProjects\PublicComics\PublicComics.Domain\obj\Debug\PublicComics.Domain.pdb
