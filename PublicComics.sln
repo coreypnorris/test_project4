@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicComics.Web", "PublicC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicComics.Web.Tests", "PublicComics.Web.Tests\PublicComics.Web.Tests.csproj", "{FDA09148-9AEE-4B0E-9B7C-18F0FB8314E9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F8D4586D-161A-4016-ADC8-52A55E0EAFF7}"
+	ProjectSection(SolutionItems) = preProject
+		schema_design.xml = schema_design.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

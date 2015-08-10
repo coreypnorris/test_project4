@@ -32,7 +32,6 @@ E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\bin\Debug\Owin.
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\bin\Debug\EntityFramework.dll
-E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\bin\Debug\PublicComics.Domain.dll
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\bin\Debug\PublicComics.Web.pdb
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\bin\Debug\Newtonsoft.Json.xml
@@ -50,7 +49,6 @@ E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\bin\Debug\Micro
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\bin\Debug\EntityFramework.xml
-E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\bin\Debug\PublicComics.Domain.pdb
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\obj\Debug\PublicComics.Web.Tests.csprojResolveAssemblyReference.cache
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\obj\Debug\PublicComics.Web.Tests.dll

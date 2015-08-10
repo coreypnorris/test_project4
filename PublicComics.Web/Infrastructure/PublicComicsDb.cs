@@ -1,24 +1,14 @@
-﻿using PublicComics.Domain;
-using System;
+﻿using PublicComics.Web.Models;
 using System.Collections.Generic;
 using System.Data.Entity;
-using System.Linq;
-using System.Web;
 
 namespace PublicComics.Web.Infrastructure
 {
-    public class PublicComicsDb : DbContext, ITitleDataSource
+    public class PublicComicsDb : DbContext
     {
-        public PublicComicsDb() :base("DefaultConnection")
-        {
-
-        }
+        public PublicComicsDb() :base("DefaultConnection") { }
 
         public DbSet<Title> Titles { get; set; }
-
-        IQueryable<Title> ITitleDataSource.Titles
-        {
-            get { return Titles; }
-        }
+        public DbSet<Issue> Issues { get; set; }
     }
 }
