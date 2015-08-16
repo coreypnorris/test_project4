@@ -8,7 +8,7 @@ namespace PublicComics.Web
     {
         public void Configuration(IAppBuilder app)
         {
-            ConfigureAuth(app);
+            
         }
     }
 }
