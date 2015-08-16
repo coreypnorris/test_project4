@@ -178,9 +178,12 @@
     <Compile Include="Infrastructure\PublicComicsDb.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Comment.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Issue.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Page.cs" />
+    <Compile Include="Models\Tag.cs" />
     <Compile Include="Models\Title.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />

@@ -5,19 +5,21 @@ using System.Web;
 
 namespace PublicComics.Web.Models
 {
-    public class Title
+    public class Page
     {
-        public Title()
+        public Page()
         {
             CreatedOn = DateTime.Now;
-            Issues = new List<Issue>();
         }
 
-        public int TitleId { get; set; }
-        public string Name { get; set; }
+        public int PageId { get; set; }
+        public string ImageUrl { get; set; }
+        public int Number { get; set; }
+
         public DateTime CreatedOn { get; set; }
         public DateTime LastModified { get; set; }
 
-        public virtual ICollection<Issue> Issues { get; set; }
+        public int IssueId { get; set; }
+        public virtual Issue Issue { get; set; }
     }
 }

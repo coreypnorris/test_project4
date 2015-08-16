@@ -5,19 +5,19 @@ using System.Web;
 
 namespace PublicComics.Web.Models
 {
-    public class Title
+    public class Tag
     {
-        public Title()
+        public Tag()
         {
             CreatedOn = DateTime.Now;
-            Issues = new List<Issue>();
         }
 
-        public int TitleId { get; set; }
+        public int TagId { get; set; }
         public string Name { get; set; }
         public DateTime CreatedOn { get; set; }
         public DateTime LastModified { get; set; }
 
-        public virtual ICollection<Issue> Issues { get; set; }
+        public int IssueId { get; set; }
+        public virtual Issue Issue { get; set; }
     }
 }

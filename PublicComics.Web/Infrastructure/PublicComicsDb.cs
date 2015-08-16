@@ -10,5 +10,8 @@ namespace PublicComics.Web.Infrastructure
 
         public DbSet<Title> Titles { get; set; }
         public DbSet<Issue> Issues { get; set; }
+        public DbSet<Page> Pages { get; set; }
+        public DbSet<Tag> Tags { get; set; }
+        public DbSet<Comment> Comments { get; set; }
     }
 }
