@@ -8,24 +8,22 @@ namespace PublicComics.Web
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+            var BaseJsBundle = new ScriptBundle("~/js-bundles/base");
+            BaseJsBundle.Include(
+                "~/Scripts/jquery-2.1.4.js",
+                "~/Scripts/bootstrap.js"
+            );
 
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
+            var BaseCssBundle = new StyleBundle("~/css-bundles/base");
+            BaseCssBundle.Include(
+                "~/Content/bootstrap.cyborg.css"
+            );
 
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
-            // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
-            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
+            bundles.Add(BaseJsBundle);
+            bundles.Add(BaseCssBundle);
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
-
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+            // Comment or uncomment this to toggle minification on or off.
+            BundleTable.EnableOptimizations = true;
         }
     }
 }
