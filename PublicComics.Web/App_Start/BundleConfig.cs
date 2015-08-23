@@ -12,7 +12,8 @@ namespace PublicComics.Web
 
             var globalCssBase = new StyleBundle("~/Content/globalBase");
             globalCssBase.Include(
-                "~/Content/bootstrap.cyborg.css"
+                "~/Content/bootstrap.cyborg.css",
+                "~/Custom_Css/global-base.css"
             );
 
             bundles.Add(globalCssBase);

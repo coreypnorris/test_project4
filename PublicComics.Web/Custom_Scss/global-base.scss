@@ -1,7 +1,6 @@
-﻿@import 'reset';
+﻿@import '_normalize.scss';
 
 body {
   font: 100% Helvetica, sans-serif;
-  background-color: #efefef;
-  background-image: url("../Images/black-noise-texture.png");
+  background-image: url("../Images/binding_dark.png");
 }
