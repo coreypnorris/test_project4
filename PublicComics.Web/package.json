@@ -1,0 +1,15 @@
+{
+  "name": "public-comics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^3.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "compileSassFiles": "node-sass Custom_Scss\\global-base.scss >> Custom_Css\\global-base.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

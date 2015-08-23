@@ -189,6 +189,7 @@
     <Content Include="Content\bootstrap.cyborg.css" />
     <Content Include="Content\bootstrap.cyborg.min.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Custom_Css\global-base.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -200,8 +201,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Custom_Css\base.scss" />
-    <Content Include="Custom_Css\_reset.scss" />
+    <Content Include="Custom_Scss\global-base.scss" />
+    <Content Include="Custom_Scss\_reset.scss" />
+    <Content Include="package.json" />
+    <Content Include="Batch_Files\compile-sass-files.bat" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Images\black-noise-texture.png" />
     <Content Include="Scripts\bootstrap.js" />
@@ -237,6 +240,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Bat_Files\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

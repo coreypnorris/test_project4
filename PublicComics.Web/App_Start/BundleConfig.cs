@@ -8,19 +8,22 @@ namespace PublicComics.Web
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            var BaseJsBundle = new ScriptBundle("~/js-bundles/base");
-            BaseJsBundle.Include(
+            
+
+            var globalCssBase = new StyleBundle("~/Content/globalBase");
+            globalCssBase.Include(
+                "~/Content/bootstrap.cyborg.css"
+            );
+
+            bundles.Add(globalCssBase);
+
+            var globalJsBase = new ScriptBundle("~/Scripts/globalBase");
+            globalJsBase.Include(
                 "~/Scripts/jquery-2.1.4.js",
                 "~/Scripts/bootstrap.js"
             );
 
-            var BaseCssBundle = new StyleBundle("~/css-bundles/base");
-            BaseCssBundle.Include(
-                "~/Content/bootstrap.cyborg.css"
-            );
-
-            bundles.Add(BaseJsBundle);
-            bundles.Add(BaseCssBundle);
+            bundles.Add(globalJsBase);
 
             // Comment or uncomment this to toggle minification on or off.
             BundleTable.EnableOptimizations = true;

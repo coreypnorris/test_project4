@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "file": "global-base.css",
+  "sources": ["global-base.scss","_reset.scss"],
+  "names": [],
+  "mappings": "ACAA,KAAM,KAAM,GAAI,GAIb,OAAQ,EACT,QAAS,GDHX,KACE,KAAW,0BACX,iBAAkB,QAClB,iBAAkB"
+}
