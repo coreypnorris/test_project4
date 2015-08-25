@@ -1,6 +1,7 @@
 ﻿using PublicComics.Web.Models;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System;
 
 namespace PublicComics.Web.Infrastructure
 {

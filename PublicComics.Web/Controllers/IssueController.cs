@@ -9,9 +9,12 @@ namespace PublicComics.Web.Controllers
 {
     public class IssueController : Controller
     {
+        private PublicComicsDb _db = new PublicComicsDb();
+
         public ActionResult Index()
         {
-            return View();
+            var issues = _db.Issues;
+            return View(issues);
         }
 
         [BasicAuthentication(BasicRealm = "PublicComicsRealm")]

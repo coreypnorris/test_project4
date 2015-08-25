@@ -182,6 +182,7 @@ E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\System.Web.WebPag
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\System.Web.WebPages.Razor.dll
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\WebGrease.dll
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\PublicComics.Domain.pdb
+E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\Antlr3.Runtime.pdb
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\System.Web.Helpers.xml
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\System.Web.Mvc.xml
@@ -190,7 +191,6 @@ E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\System.Web.Razor.
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\System.Web.WebPages.xml
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\System.Web.WebPages.Deployment.xml
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\System.Web.WebPages.Razor.xml
-E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\Antlr3.Runtime.pdb
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\Newtonsoft.Json.xml
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\EntityFramework.xml
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\EntityFramework.SqlServer.xml
