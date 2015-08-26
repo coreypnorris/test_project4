@@ -1,4 +1,4 @@
-﻿@*@model IEnumerable<PublicComics.Web.Models.Issue>
+﻿@model IEnumerable<PublicComics.Web.Models.Issue>
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -24,13 +24,13 @@
 @foreach (var issue in Model)
 {
     var issueNameAndNumber = "" + Html.DisplayFor(modelItem => issue.Title.Name) + " #" + Html.DisplayFor(modelItem => issue.Number);
-    var issuePreviewPages = issue.Pages.ToList().GetRange(1,6);
+    var issuePreviewPages = issue.Pages.ToList().GetRange(1, 6);
     var issueTags = issue.Tags.ToList();
     var numberOfIssuePages = issue.Pages.Count;
     var numberOfIssueComments = issue.Comments.Count;
 
     <a href="#">@issueNameAndNumber</a>
-    
+
     <p>@Html.DisplayFor(modelItem => issue.CreatedOn)</p>
 
     <a href="#">Pages</a>
@@ -38,7 +38,7 @@
 
     <a href="#">Comments</a>
     <p>@numberOfIssueComments</p>
-    
+
     <img alt="@issueNameAndNumber cover." src="@Html.DisplayFor(modelItem => issue.Pages.ElementAt(0).ImageUrl)" />
     foreach (var previewPage in issuePreviewPages)
     {
@@ -49,4 +49,4 @@
     {
         <p>@Html.DisplayFor(modelItem => issueTag.Name)</p>
     }
-}*@
+}

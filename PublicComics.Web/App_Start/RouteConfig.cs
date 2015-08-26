@@ -14,7 +14,13 @@ namespace PublicComics.Web
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "Issue Routes",
+                name: "Home",
+                url: "",
+                defaults: new { controller = "Home", action = "Index" }
+            );
+
+            routes.MapRoute(
+                name: "Issue",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Issue", action = "Index", id = UrlParameter.Optional }
             );
