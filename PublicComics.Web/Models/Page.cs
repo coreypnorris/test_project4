@@ -12,14 +12,14 @@ namespace PublicComics.Web.Models
             CreatedOn = DateTime.Now;
         }
 
-        public int PageId { get; set; }
+        public int PageID { get; set; }
         public string ImageUrl { get; set; }
         public int Number { get; set; }
 
         public DateTime CreatedOn { get; set; }
         public DateTime LastModified { get; set; }
 
-        public int IssueId { get; set; }
+        public int IssueID { get; set; }
         public virtual Issue Issue { get; set; }
     }
 }

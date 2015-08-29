@@ -13,7 +13,7 @@ namespace PublicComics.Web.Models
             Issues = new List<Issue>();
         }
 
-        public int TitleId { get; set; }
+        public int TitleID { get; set; }
         public string Name { get; set; }
         public DateTime CreatedOn { get; set; }
         public DateTime LastModified { get; set; }

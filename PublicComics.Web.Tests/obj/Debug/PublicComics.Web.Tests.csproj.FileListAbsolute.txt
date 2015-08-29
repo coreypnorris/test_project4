@@ -1,3 +1,4 @@
+E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\obj\Debug\PublicComics.Web.Tests.csprojResolveAssemblyReference.cache
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\bin\Debug\roslyn\csc.exe
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -38,6 +39,5 @@ E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\bin\Debug\Syste
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\bin\Debug\Microsoft.Owin.xml
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\bin\Debug\System.Web.Optimization.xml
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\bin\Debug\EntityFramework.xml
-E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\obj\Debug\PublicComics.Web.Tests.csprojResolveAssemblyReference.cache
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\obj\Debug\PublicComics.Web.Tests.dll
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web.Tests\obj\Debug\PublicComics.Web.Tests.pdb

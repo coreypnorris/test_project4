@@ -14,7 +14,7 @@ namespace PublicComics.Web.Models
             SubComments = new List<Comment>();
         }
 
-        public int CommentId { get; set; }
+        public int CommentID { get; set; }
         public DateTime CreatedOn { get; set; }
         public DateTime LastModified { get; set; }
 

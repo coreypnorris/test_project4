@@ -16,13 +16,13 @@ namespace PublicComics.Web.Models
             Comments = new List<Comment>();
         }
 
-        public int IssueId { get; set; }
+        public int IssueID { get; set; }
         public DateTime CreatedOn { get; set; }
         public DateTime LastModified { get; set; }
 
         public int? Number { get; set; }
 
-        public int TitleId { get; set; }
+        public int TitleID { get; set; }
         public virtual Title Title { get; set; }
 
         public virtual ICollection<Page> Pages { get; set; }

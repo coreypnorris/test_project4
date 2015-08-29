@@ -13,8 +13,7 @@ namespace PublicComics.Web.Controllers
 
         public ActionResult Index()
         {
-            var issues = _db.Issues;
-            return View(issues);
+            return View();
         }
 
         [BasicAuthentication(BasicRealm = "PublicComicsRealm")]

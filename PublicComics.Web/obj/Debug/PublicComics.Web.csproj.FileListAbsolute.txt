@@ -138,6 +138,7 @@ E:\code\VisualStudio\PublicComics\PublicComics.Web\bin\Microsoft.Owin.Security.M
 E:\code\VisualStudio\PublicComics\PublicComics.Web\obj\Debug\PublicComics.Web.csprojResolveAssemblyReference.cache
 E:\code\VisualStudio\PublicComics\PublicComics.Web\obj\Debug\PublicComics.Web.dll
 E:\code\VisualStudio\PublicComics\PublicComics.Web\obj\Debug\PublicComics.Web.pdb
+E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\obj\Debug\PublicComics.Web.csprojResolveAssemblyReference.cache
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\roslyn\csc.exe
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -206,6 +207,5 @@ E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\Microsoft.Owin.Se
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\Microsoft.Owin.Security.Google.xml
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\Microsoft.Owin.Security.Twitter.xml
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\obj\Debug\PublicComics.Web.csprojResolveAssemblyReference.cache
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\obj\Debug\PublicComics.Web.dll
 E:\Code\VisualStudioProjects\PublicComics\PublicComics.Web\obj\Debug\PublicComics.Web.pdb
