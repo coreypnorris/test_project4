@@ -1,6 +1,12 @@
 ﻿@import '_normalize.scss';
+@import 'bourbon/_bourbon.scss';
+@import 'neat/_neat.scss';
 
 body {
   font: 100% Helvetica, sans-serif;
   background-image: url("../Images/txture_@2X.png");
+}
+
+.outer-container {
+    @include outer-container;
 }

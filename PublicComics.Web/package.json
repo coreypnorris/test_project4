@@ -9,7 +9,7 @@
   "devDependencies": { },
   "scripts": {
     "cleanCustomCssFiles": "del /S/q Custom_Css\\*",
-    "compileSassFiles": "npm run cleanCustomCssFiles && node-sass Custom_Scss\\global-base.scss >> Custom_Css\\global-base.css"
+    "compileSassFiles": "npm run cleanCustomCssFiles && Batch_Files\\compile-sass-files.bat"
   },
   "author": "",
   "license": "ISC"

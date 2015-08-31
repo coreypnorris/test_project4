@@ -352,7 +352,24 @@ td,
 th {
   padding: 0; }
 
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
 body {
   font: 100% Helvetica, sans-serif;
   background-image: url("../Images/txture_@2X.png"); }
+
+.outer-container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .outer-container::after {
+    clear: both;
+    content: "";
+    display: table; }
 

@@ -3,50 +3,58 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<a href="/">Public Comics</a>
+@Styles.Render("~/Custom_Css/home-index.css");
 
-<form role="search">
-    <div>
-        <input type="text" placeholder="Search by title, issue, or tag">
-    </div>
-</form>
+<div class="outer-container">
+    <a href="/">Public Comics</a>
 
-<a href="#">Admin</a>
+    <form role="search">
+        <div>
+            <input type="text" placeholder="Search by title, issue, or tag">
+        </div>
+    </form>
 
-<h1>Read vintage comics from the public domain.</h1>
+    <a href="#">Admin</a>
 
-<img alt="A vintage photo of a child reading a comicbook." src="~/Images/vintage-photo-1.jpg" />
-<img alt="A vintage photo of a comicbook stand." src="~/Images/vintage-photo-2.jpg" />
-<img alt="A vintage photo of a child reading a comicbook." src="~/Images/vintage-photo-3.jpg" />
-<img alt="A vintage photo of a comicbook rack." src="~/Images/vintage-photo-4.jpg" />
-<img alt="A vintage photo of a child reading a comicbook." src="~/Images/vintage-photo-5.jpg" />
+    <h1>Read vintage comics from the public domain.</h1>
 
-@foreach (var issue in Model)
-{
-    var issueNameAndNumber = "" + Html.DisplayFor(modelItem => issue.Title.Name) + " #" + Html.DisplayFor(modelItem => issue.Number);
-    var issuePreviewPages = issue.Pages.ToList().GetRange(1, 6);
-    var issueTags = issue.Tags.ToList();
-    var numberOfIssuePages = issue.Pages.Count;
-    var numberOfIssueComments = issue.Comments.Count;
+    <img alt="A vintage photo of a child reading a comicbook." src="~/Images/vintage-photo-1.jpg" />
+    <img alt="A vintage photo of a comicbook stand." src="~/Images/vintage-photo-2.jpg" />
+    <img alt="A vintage photo of a child reading a comicbook." src="~/Images/vintage-photo-3.jpg" />
+    <img alt="A vintage photo of a comicbook rack." src="~/Images/vintage-photo-4.jpg" />
+    <img alt="A vintage photo of a child reading a comicbook." src="~/Images/vintage-photo-5.jpg" />
 
-    <a href="#">@issueNameAndNumber</a>
-
-    <p>@Html.DisplayFor(modelItem => issue.CreatedOn)</p>
-
-    <a href="#">Pages</a>
-    <p>@numberOfIssuePages</p>
-
-    <a href="#">Comments</a>
-    <p>@numberOfIssueComments</p>
-
-    <img alt="@issueNameAndNumber cover." src="@Html.DisplayFor(modelItem => issue.Pages.ElementAt(0).ImageUrl)" />
-    foreach (var previewPage in issuePreviewPages)
+    @foreach (var issue in Model)
     {
-        <img alt="@issueNameAndNumber preview page." src="@Html.DisplayFor(modelItem => previewPage.ImageUrl)" />
+        var issueNameAndNumber = "" + Html.DisplayFor(modelItem => issue.Title.Name) + " #" + Html.DisplayFor(modelItem => issue.Number);
+        var issuePreviewPages = issue.Pages.ToList().GetRange(1, 6);
+        var issueTags = issue.Tags.ToList();
+        var numberOfIssuePages = issue.Pages.Count;
+        var numberOfIssueComments = issue.Comments.Count;
+
+        <a href="#">@issueNameAndNumber</a>
+
+        <p>@Html.DisplayFor(modelItem => issue.CreatedOn)</p>
+
+        <a href="#">Pages</a>
+        <p>@numberOfIssuePages</p>
+
+        <a href="#">Comments</a>
+        <p>@numberOfIssueComments</p>
+
+        <img alt="@issueNameAndNumber cover." src="@Html.DisplayFor(modelItem => issue.Pages.ElementAt(0).ImageUrl)" />
+        foreach (var previewPage in issuePreviewPages)
+        {
+            <img alt="@issueNameAndNumber preview page." src="@Html.DisplayFor(modelItem => previewPage.ImageUrl)" />
+        }
+
+        foreach (var issueTag in issueTags)
+        {
+            <p>@Html.DisplayFor(modelItem => issueTag.Name)</p>
+        }
     }
 
-    foreach (var issueTag in issueTags)
-    {
-        <p>@Html.DisplayFor(modelItem => issueTag.Name)</p>
-    }
-}
+    <a href="#">contact@public-comics.com</a> |
+    <a href="#">twitter.com/public-comics</a>
+</div>
+
