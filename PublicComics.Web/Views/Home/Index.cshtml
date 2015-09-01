@@ -3,19 +3,27 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@Styles.Render("~/Custom_Css/home-index.css");
+@Styles.Render("~/Custom_Css/home-index.css")
 
 <div class="outer-container">
-    <a href="/">Public Comics</a>
-
-    <form role="search">
-        <div>
-            <input type="text" placeholder="Search by title, issue, or tag">
+    <div class="navbar-row">
+        <div class="navbar-col-one">
+            <a href="/" class="navbar-home-link">Public Comics</a>
         </div>
-    </form>
 
-    <a href="#">Admin</a>
+        <div class="navbar-col-two">
+            <form role="search">
+                <div>
+                    <input class="navbar-search-bar" type="text" placeholder="Search by title, issue, or tag">
+                </div>
+            </form>
+        </div>
 
+        <div class="navbar-col-three">
+            <a href="#" class="navbar-admin-link">Admin</a>
+        </div>
+    </div>
+    
     <h1>Read vintage comics from the public domain.</h1>
 
     <img alt="A vintage photo of a child reading a comicbook." src="~/Images/vintage-photo-1.jpg" />

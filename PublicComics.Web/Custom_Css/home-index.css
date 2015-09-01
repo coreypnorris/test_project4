@@ -6,11 +6,41 @@ html {
 *::before {
   box-sizing: inherit; }
 
-.carousel-row {
+.navbar-row {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%; }
-  .carousel-row:last-child {
+  width: 100%;
+  border: 1px solid #282828;
+  height: 50px;
+  background-color: black; }
+  .navbar-row:last-child {
     margin-right: 0; }
+
+.navbar-col-one {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%; }
+  .navbar-col-one:last-child {
+    margin-right: 0; }
+
+.navbar-col-two {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  .navbar-col-two:last-child {
+    margin-right: 0; }
+
+.navbar-col-three {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%; }
+  .navbar-col-three:last-child {
+    margin-right: 0; }
+
+.navbar-home-link {
+  font-family: 'GlacialIndifferenceBold'; }
 

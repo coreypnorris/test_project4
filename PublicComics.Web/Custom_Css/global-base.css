@@ -361,8 +361,8 @@ html {
   box-sizing: inherit; }
 
 body {
-  font: 100% Helvetica, sans-serif;
-  background-image: url("../Images/txture_@2X.png"); }
+  font-family: 'GlacialIndifferenceRegular';
+  background-image: url("../Images/txture.png"); }
 
 .outer-container {
   max-width: 68em;

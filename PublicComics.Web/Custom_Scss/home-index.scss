@@ -1,6 +1,33 @@
 ﻿@import 'bourbon/_bourbon.scss';
 @import 'neat/_neat.scss';
 
-.carousel-row {
-    @include span-columns(6);
+.navbar-row {
+    @include span-columns(12);
+    border: 1px solid #282828;
+    height: 50px;
+    background-color: black;
+}
+
+.navbar-col-one {
+    @include span-columns(2 of 12);
+}
+
+.navbar-col-two {
+    @include span-columns(8 of 12);
+}
+
+.navbar-col-three {
+    @include span-columns(2 of 12);
+}
+
+.navbar-home-link {
+    font-family: 'GlacialIndifferenceBold';
+}
+
+.navbar-search-bar {
+
+}
+
+.navbar-admin-link {
+
 }
