@@ -3,31 +3,47 @@
 
 .navbar-row {
     @include span-columns(12);
-    border: 1px solid #282828;
-    height: 50px;
-    background-color: black;
+    /*border: 1px solid #282828;
+    height: 65px;
+    background-color: black;*/
+
+    .navbar-col-one {
+        @include span-columns(2 of 12);
+    }
+
+    .navbar-col-two {
+        @include span-columns(8 of 12);
+    }
+
+    .navbar-col-three {
+        @include span-columns(2 of 12);
+    }
+
+    .navbar-home-link {
+        font-family: 'GlacialIndifferenceBold';
+    }
+
+    .navbar-icon {
+        width: 40%;
+        margin: 3px 0 0 0;
+    }
+
+    .navbar-search-bar {
+        width: 100%;
+    }
+
+    .navbar-admin-link {
+
+    }
 }
 
-.navbar-col-one {
-    @include span-columns(2 of 12);
-}
+.carousel-row {
+    @include span-columns(12);
+    text-align: center;
 
-.navbar-col-two {
-    @include span-columns(8 of 12);
-}
-
-.navbar-col-three {
-    @include span-columns(2 of 12);
-}
-
-.navbar-home-link {
-    font-family: 'GlacialIndifferenceBold';
-}
-
-.navbar-search-bar {
-
-}
-
-.navbar-admin-link {
-
+    .carousel-header-text {
+        font-family: 'GIRegular'; 
+        /*font-weight: normal; 
+        font-style: normal;*/ 
+    }
 }

@@ -2,13 +2,13 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-@Styles.Render("~/Custom_Css/home-index.css")
+<link type="text/css" rel="stylesheet" href="~/Custom_Css/home-index.css" />
 
 <div class="outer-container">
     <div class="navbar-row">
         <div class="navbar-col-one">
-            <a href="/" class="navbar-home-link">Public Comics</a>
+            <img alt="" class="navbar-icon" src="~/Images/icon3edit2.png" />
+            @*<a href="/" class="navbar-home-link">Public Comics</a>*@
         </div>
 
         <div class="navbar-col-two">
@@ -18,19 +18,23 @@
                 </div>
             </form>
         </div>
-
-        <div class="navbar-col-three">
-            <a href="#" class="navbar-admin-link">Admin</a>
+    </div>
+    
+    
+    <div class="carousel-row">
+        <div class="well">
+            <h3 class="carousel-header-text">Read vintage comics from the public domain.</h3>
+            <hr />
+            <div class="slick-carousel">
+                <img alt="A vintage photo of a child reading a comicbook." src="~/Images/vintage-photo-1.jpg" />
+                <img alt="A vintage photo of a comicbook stand." src="~/Images/vintage-photo-2.jpg" />
+                <img alt="A vintage photo of a child reading a comicbook." src="~/Images/vintage-photo-3.jpg" />
+                <img alt="A vintage photo of a comicbook rack." src="~/Images/vintage-photo-4.jpg" />
+                <img alt="A vintage photo of a child reading a comicbook." src="~/Images/vintage-photo-5.jpg" />
+            </div>
         </div>
     </div>
     
-    <h1>Read vintage comics from the public domain.</h1>
-
-    <img alt="A vintage photo of a child reading a comicbook." src="~/Images/vintage-photo-1.jpg" />
-    <img alt="A vintage photo of a comicbook stand." src="~/Images/vintage-photo-2.jpg" />
-    <img alt="A vintage photo of a child reading a comicbook." src="~/Images/vintage-photo-3.jpg" />
-    <img alt="A vintage photo of a comicbook rack." src="~/Images/vintage-photo-4.jpg" />
-    <img alt="A vintage photo of a child reading a comicbook." src="~/Images/vintage-photo-5.jpg" />
 
     @foreach (var issue in Model)
     {
@@ -63,6 +67,8 @@
     }
 
     <a href="#">contact@public-comics.com</a> |
-    <a href="#">twitter.com/public-comics</a>
+    <a href="#">twitter.com/public-comics</a> |
+    <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
 </div>
 
+<script type="text/javascript" src="~/Custom_Javascript/home-index.js"></script>

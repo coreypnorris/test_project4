@@ -9,7 +9,10 @@
   "devDependencies": { },
   "scripts": {
     "cleanCustomCssFiles": "del /S/q Custom_Css\\*",
-    "compileSassFiles": "npm run cleanCustomCssFiles && Batch_Files\\compile-sass-files.bat"
+    "bundleCssFiles": "Batch_Files\\bundle-css-files.bat",
+    "compileSassFiles": "Batch_Files\\compile-sass-files.bat",
+    "bundleJavascriptFiles": "Batch_Files\\bundle-javascript-files.bat",
+    "build": "npm run cleanCustomCssFiles && npm run bundleCssFiles && npm run compileSassFiles && npm run bundleJavascriptFiles"
   },
   "author": "",
   "license": "ISC"
