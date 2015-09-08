@@ -190,11 +190,12 @@
     <Content Include="Content\bootstrap.cyborg.css" />
     <Content Include="Content\bootstrap.cyborg.min.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Custom_Css\ajax-loader.gif" />
+    <Content Include="Custom_Css\fonts\slick.svg" />
     <Content Include="Custom_Css\global-base.css" />
     <Content Include="Custom_Css\home-index.css" />
     <Content Include="Custom_Javascript\global-base.js" />
     <Content Include="Custom_Javascript\home-index.js" />
-    <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -207,13 +208,10 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Custom_Scss\global-base.scss" />
     <Content Include="Custom_Scss\partials\_normalize.scss" />
+    <Content Include="favicon.ico" />
     <Content Include="Images\binding_dark.png" />
     <Content Include="Images\binding_dark_%402X.png" />
     <Content Include="Images\icon.png" />
-    <Content Include="Images\icon2.png" />
-    <Content Include="Images\icon3.png" />
-    <Content Include="Images\icon3edit.png" />
-    <Content Include="Images\icon3edit2.png" />
     <Content Include="Images\txture.png" />
     <Content Include="Images\txture_%402X.png" />
     <Content Include="Images\vintage-photo-1.jpg" />
@@ -3660,6 +3658,10 @@
     <Content Include="node_modules\bootswatch\yeti\_variables.scss" />
     <Content Include="node_modules\bootswatch\_config.yml" />
     <Content Include="Batch_Files\bundle-css-files.bat" />
+    <Content Include="Custom_Css\fonts\slick.eot" />
+    <Content Include="Custom_Css\fonts\slick.ttf" />
+    <Content Include="Custom_Css\fonts\slick.woff" />
+    <Content Include="Batch_Files\copy-slick-files.bat" />
     <None Include="node_modules\node-sass\node_modules\pangyp\gyp\codereview.settings" />
     <Content Include="node_modules\node-sass\node_modules\pangyp\gyp\data\win\large-pdb-shim.cc" />
     <Content Include="node_modules\node-sass\node_modules\pangyp\gyp\DEPS" />
@@ -4727,6 +4729,7 @@
     <Content Include="Views\Issue\Admin.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

@@ -1,6 +1,8 @@
 ﻿$('.slick-carousel').slick({
-    fade: true,
-    cssEase: 'linear',
-    arrows: false,
-    dots: true
+    dots: true,
+    arrows: false
+});
+
+$('.issue-preview-pages').slick({
+    slidesToShow: 7
 });

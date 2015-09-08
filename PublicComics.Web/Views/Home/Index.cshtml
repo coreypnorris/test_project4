@@ -4,71 +4,80 @@
 }
 <link type="text/css" rel="stylesheet" href="~/Custom_Css/home-index.css" />
 
-<div class="outer-container">
-    <div class="navbar-row">
-        <div class="navbar-col-one">
-            <img alt="" class="navbar-icon" src="~/Images/icon3edit2.png" />
-            @*<a href="/" class="navbar-home-link">Public Comics</a>*@
-        </div>
+<div class="navbar-row">
+    <div class="navbar-icon-col">
+        <a href="/" class="navbar-home-link"><img alt="" class="navbar-icon" src="~/Images/icon.png" /></a>
+    </div>
 
-        <div class="navbar-col-two">
-            <form role="search">
-                <div>
-                    <input class="navbar-search-bar" type="text" placeholder="Search by title, issue, or tag">
-                </div>
-            </form>
+    <div class="navbar-search-col">
+        <h1 class="navbar-header-text">Read vintage comics from the public domain.</h1>
+        <form role="search">
+            <input class="form-control navbar-search-bar" type="text" placeholder="Search by title, issue, or tag">
+        </form>
+    </div>
+</div>
+    
+    
+<div class="carousel-row">
+    <hr />
+    <div class="well">
+        <div class="slick-carousel">
+            <img alt="A vintage photo of a child reading a comicbook." src="~/Images/vintage-photo-1.jpg" />
+            <img alt="A vintage photo of a comicbook stand." src="~/Images/vintage-photo-2.jpg" />
+            <img alt="A vintage photo of a child reading a comicbook." src="~/Images/vintage-photo-3.jpg" />
+            <img alt="A vintage photo of a comicbook rack." src="~/Images/vintage-photo-4.jpg" />
+            <img alt="A vintage photo of a child reading a comicbook." src="~/Images/vintage-photo-5.jpg" />
         </div>
     </div>
+    <hr />
+</div>
     
-    
-    <div class="carousel-row">
-        <div class="well">
-            <h3 class="carousel-header-text">Read vintage comics from the public domain.</h3>
-            <hr />
-            <div class="slick-carousel">
-                <img alt="A vintage photo of a child reading a comicbook." src="~/Images/vintage-photo-1.jpg" />
-                <img alt="A vintage photo of a comicbook stand." src="~/Images/vintage-photo-2.jpg" />
-                <img alt="A vintage photo of a child reading a comicbook." src="~/Images/vintage-photo-3.jpg" />
-                <img alt="A vintage photo of a comicbook rack." src="~/Images/vintage-photo-4.jpg" />
-                <img alt="A vintage photo of a child reading a comicbook." src="~/Images/vintage-photo-5.jpg" />
+
+@foreach (var issue in Model)
+{
+    var issueNameAndNumber = "" + Html.DisplayFor(modelItem => issue.Title.Name) + " #" + Html.DisplayFor(modelItem => issue.Number);
+
+    <div class="comic-card-row well">
+        <div class="comic-cover-col">
+            <img class="comic-cover" alt="@issueNameAndNumber cover." src="@Html.DisplayFor(modelItem => issue.Pages.ElementAt(0).ImageUrl)" />
+        </div>
+        <div class="comic-info-col">
+            <h3 class="issue-name-and-number"><a href="#">@issueNameAndNumber</a></h3>
+
+            <p class="issue-upload-date">Uploaded on @Html.DisplayFor(modelItem => issue.CreatedOn)</p>
+
+            <div class="issue-tags">
+                @{
+                    var issueTags = issue.Tags.ToList();
+                    foreach (var issueTag in issueTags)
+                    {
+                        <a href="#" class="btn btn-default btn-xs">@Html.DisplayFor(modelItem => issueTag.Name)</a>
+                    }
+                }
+            </div>
+                
+            @{ 
+                var numberOfIssuePages = issue.Pages.Count;
+                var numberOfIssueComments = issue.Comments.Count;
+            }
+
+            <div class="issue-metrics-links">
+                <p class="issue-pages-link"><a href="#">Pages </a> <span class="badge issue-badge">@numberOfIssuePages</span></p>
+                <p class="issue-comments-link"><a href="#">Comments </a> <span class="badge issue-badge">@numberOfIssueComments</span></p>
+            </div>
+               
+            <div class="issue-preview-pages">
+                @{
+                    var issuePreviewPages = issue.Pages.ToList();
+                    foreach (var previewPage in issuePreviewPages)
+                    {
+                        <img class="issue-preview-page" alt="@issueNameAndNumber preview page." src="@Html.DisplayFor(modelItem => previewPage.ImageUrl)" />
+                    }
+                }
             </div>
         </div>
-    </div>
-    
+    </div>   
+}
 
-    @foreach (var issue in Model)
-    {
-        var issueNameAndNumber = "" + Html.DisplayFor(modelItem => issue.Title.Name) + " #" + Html.DisplayFor(modelItem => issue.Number);
-        var issuePreviewPages = issue.Pages.ToList().GetRange(1, 6);
-        var issueTags = issue.Tags.ToList();
-        var numberOfIssuePages = issue.Pages.Count;
-        var numberOfIssueComments = issue.Comments.Count;
-
-        <a href="#">@issueNameAndNumber</a>
-
-        <p>@Html.DisplayFor(modelItem => issue.CreatedOn)</p>
-
-        <a href="#">Pages</a>
-        <p>@numberOfIssuePages</p>
-
-        <a href="#">Comments</a>
-        <p>@numberOfIssueComments</p>
-
-        <img alt="@issueNameAndNumber cover." src="@Html.DisplayFor(modelItem => issue.Pages.ElementAt(0).ImageUrl)" />
-        foreach (var previewPage in issuePreviewPages)
-        {
-            <img alt="@issueNameAndNumber preview page." src="@Html.DisplayFor(modelItem => previewPage.ImageUrl)" />
-        }
-
-        foreach (var issueTag in issueTags)
-        {
-            <p>@Html.DisplayFor(modelItem => issueTag.Name)</p>
-        }
-    }
-
-    <a href="#">contact@public-comics.com</a> |
-    <a href="#">twitter.com/public-comics</a> |
-    <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
-</div>
 
 <script type="text/javascript" src="~/Custom_Javascript/home-index.js"></script>

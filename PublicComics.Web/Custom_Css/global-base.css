@@ -8043,7 +8043,8 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-image: url("../Images/txture.png"); }
+  background-image: url("../Images/txture.png");
+  font-family: 'GIRegular'; }
 
 .outer-container {
   max-width: 68em;
@@ -8053,4 +8054,15 @@ body {
     clear: both;
     content: "";
     display: table; }
+
+.footer-row {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  text-align: center; }
+  .footer-row:last-child {
+    margin-right: 0; }
+  .footer-row .footer-contact-text {
+    font-size: 19px; }
 

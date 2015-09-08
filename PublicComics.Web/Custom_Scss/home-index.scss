@@ -1,49 +1,103 @@
 ﻿@import 'bourbon/_bourbon.scss';
 @import 'neat/_neat.scss';
 
+$bootswatch_blue: #2a9fd6;
+$bootswatch_gray: #424242;
+$slick_dot_font_size: 30px;
+
 .navbar-row {
     @include span-columns(12);
-    /*border: 1px solid #282828;
-    height: 65px;
-    background-color: black;*/
+    margin: 25px 0 0 0;
 
-    .navbar-col-one {
-        @include span-columns(2 of 12);
+    .navbar-icon-col {
+        @include span-columns(1.5 of 12);
     }
 
-    .navbar-col-two {
-        @include span-columns(8 of 12);
-    }
-
-    .navbar-col-three {
-        @include span-columns(2 of 12);
-    }
-
-    .navbar-home-link {
-        font-family: 'GlacialIndifferenceBold';
+    .navbar-search-col {
+        @include span-columns(9.5 of 12);
     }
 
     .navbar-icon {
-        width: 40%;
-        margin: 3px 0 0 0;
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+
+    .navbar-header-text {
+        font-family: 'GIRegular'; 
+        font-size: 32px;
+        margin: 0 0 12px 0;
     }
 
     .navbar-search-bar {
         width: 100%;
     }
-
-    .navbar-admin-link {
-
-    }
 }
 
 .carousel-row {
     @include span-columns(12);
-    text-align: center;
 
-    .carousel-header-text {
-        font-family: 'GIRegular'; 
-        /*font-weight: normal; 
-        font-style: normal;*/ 
+    .slick-dots li button:before {
+        color: whitesmoke;
+    }
+
+    .slick-dots li.slick-active button:before {
+        color: $bootswatch_blue;
+    }
+}
+
+.comic-card-row {
+    @include span-columns(12);
+    margin: 0 0 0 0;
+    padding: 15px 30px 15px 15px;
+
+    .comic-cover-col {
+        @include span-columns(3 of 12);
+
+        .comic-cover {
+            width: 95%
+        }
+    }
+
+    .comic-info-col {
+        @include span-columns(9 of 12);
+
+        .issue-name-and-number {
+            font-family: 'GIRegular';
+            margin: 0 0 0 0;
+        }
+
+        .issue-upload-date {
+            margin: 5px 0 0 0;
+        }
+
+        .issue-tags {
+            margin: 10px 0 16px 0;
+        }
+
+        .issue-metrics-links {
+            margin: 0 0 10px 0;
+
+            .issue-pages-link {
+                float: left;
+                margin: 0 0 0 0;
+            }
+
+            .issue-comments-link {
+                margin: 0 0 0 0;
+            }
+        }
+
+        .issue-badge {
+            margin: 0 10px 0 5px;
+            background-color: $bootswatch_gray;
+        }
+
+        .issue-preview-pages {
+            margin: 16px 0 0 0;
+        }
+
+        .issue-preview-page {
+            width: 13%;
+        }
     }
 }

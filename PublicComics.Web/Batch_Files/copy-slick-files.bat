@@ -1,0 +1,1 @@
+XCOPY node_modules\slick-carousel\slick\fonts Custom_Css\fonts && XCOPY node_modules\slick-carousel\slick\ajax-loader.gif Custom_Css\

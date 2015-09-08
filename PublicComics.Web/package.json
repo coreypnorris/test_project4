@@ -10,9 +10,10 @@
   "scripts": {
     "cleanCustomCssFiles": "del /S/q Custom_Css\\*",
     "bundleCssFiles": "Batch_Files\\bundle-css-files.bat",
+    "copySlickFiles": "Batch_Files\\copy-slick-files.bat",
     "compileSassFiles": "Batch_Files\\compile-sass-files.bat",
     "bundleJavascriptFiles": "Batch_Files\\bundle-javascript-files.bat",
-    "build": "npm run cleanCustomCssFiles && npm run bundleCssFiles && npm run compileSassFiles && npm run bundleJavascriptFiles"
+    "build": "npm run cleanCustomCssFiles && npm run bundleCssFiles && npm run copySlickFiles && npm run compileSassFiles && npm run bundleJavascriptFiles"
   },
   "author": "",
   "license": "ISC"

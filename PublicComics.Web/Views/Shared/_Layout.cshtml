@@ -4,12 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PublicComics</title>
-    
     <link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/glacial-indifference" type="text/css" />
     <link rel="stylesheet" href="~/Custom_Css/global-base.css">
     <script type="text/javascript" src="~/Custom_Javascript/global-base.js"></script>
 </head>
 <body>
-    @RenderBody()
+    <div class="outer-container">
+        @RenderBody()
+        @RenderPage("~/Views/Shared/_Footer.cshtml")
+    </div>
 </body>
 </html>

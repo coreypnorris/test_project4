@@ -11,37 +11,30 @@ html {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  /*border: 1px solid #282828;
-    height: 65px;
-    background-color: black;*/ }
+  margin: 25px 0 0 0; }
   .navbar-row:last-child {
     margin-right: 0; }
-  .navbar-row .navbar-col-one {
+  .navbar-row .navbar-icon-col {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 14.70196%; }
-    .navbar-row .navbar-col-one:last-child {
+    width: 10.43705%; }
+    .navbar-row .navbar-icon-col:last-child {
       margin-right: 0; }
-  .navbar-row .navbar-col-two {
+  .navbar-row .navbar-search-col {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 65.88078%; }
-    .navbar-row .navbar-col-two:last-child {
+    width: 78.67549%; }
+    .navbar-row .navbar-search-col:last-child {
       margin-right: 0; }
-  .navbar-row .navbar-col-three {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 14.70196%; }
-    .navbar-row .navbar-col-three:last-child {
-      margin-right: 0; }
-  .navbar-row .navbar-home-link {
-    font-family: 'GlacialIndifferenceBold'; }
   .navbar-row .navbar-icon {
-    width: 40%;
-    margin: 3px 0 0 0; }
+    width: 100%;
+    margin: 0 0 0 0; }
+  .navbar-row .navbar-header-text {
+    font-family: 'GIRegular';
+    font-size: 32px;
+    margin: 0 0 12px 0; }
   .navbar-row .navbar-search-bar {
     width: 100%; }
 
@@ -49,12 +42,58 @@ html {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%;
-  text-align: center; }
+  width: 100%; }
   .carousel-row:last-child {
     margin-right: 0; }
-  .carousel-row .carousel-header-text {
-    font-family: 'GIRegular';
-    /*font-weight: normal; 
-        font-style: normal;*/ }
+  .carousel-row .slick-dots li button:before {
+    color: whitesmoke; }
+  .carousel-row .slick-dots li.slick-active button:before {
+    color: #2a9fd6; }
+
+.comic-card-row {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin: 0 0 0 0;
+  padding: 15px 30px 15px 15px; }
+  .comic-card-row:last-child {
+    margin-right: 0; }
+  .comic-card-row .comic-cover-col {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .comic-card-row .comic-cover-col:last-child {
+      margin-right: 0; }
+    .comic-card-row .comic-cover-col .comic-cover {
+      width: 95%; }
+  .comic-card-row .comic-info-col {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%; }
+    .comic-card-row .comic-info-col:last-child {
+      margin-right: 0; }
+    .comic-card-row .comic-info-col .issue-name-and-number {
+      font-family: 'GIRegular';
+      margin: 0 0 0 0; }
+    .comic-card-row .comic-info-col .issue-upload-date {
+      margin: 5px 0 0 0; }
+    .comic-card-row .comic-info-col .issue-tags {
+      margin: 10px 0 16px 0; }
+    .comic-card-row .comic-info-col .issue-metrics-links {
+      margin: 0 0 10px 0; }
+      .comic-card-row .comic-info-col .issue-metrics-links .issue-pages-link {
+        float: left;
+        margin: 0 0 0 0; }
+      .comic-card-row .comic-info-col .issue-metrics-links .issue-comments-link {
+        margin: 0 0 0 0; }
+    .comic-card-row .comic-info-col .issue-badge {
+      margin: 0 10px 0 5px;
+      background-color: #424242; }
+    .comic-card-row .comic-info-col .issue-preview-pages {
+      margin: 16px 0 0 0; }
+    .comic-card-row .comic-info-col .issue-preview-page {
+      width: 13%; }
 

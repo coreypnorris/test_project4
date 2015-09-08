@@ -83,6 +83,11 @@ namespace PublicComics.Web.Migrations
                 LastModified = DateTime.Now
             };
 
+            Issue.Comments.Add(CommentThree);
+            Issue.Comments.Add(CommentFour);
+            Issue.Comments.Add(CommentFive);
+            Issue.Comments.Add(CommentSix);
+
             CommentOne.SubComments.Add(CommentThree);
             CommentTwo.SubComments.Add(CommentFour);
             CommentThree.SubComments.Add(CommentFive);
