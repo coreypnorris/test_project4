@@ -14,6 +14,7 @@ namespace PublicComics.Web.Migrations
 
         protected override void Seed(PublicComics.Web.Infrastructure.PublicComicsDb context)
         {
+            
             var Title = new Title()
             {
                 TitleID = 1,
@@ -130,4 +131,5 @@ namespace PublicComics.Web.Migrations
             context.SaveChanges();
         }
     }
+    
 }

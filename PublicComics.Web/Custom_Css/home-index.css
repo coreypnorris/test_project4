@@ -18,19 +18,21 @@ html {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 10.43705%; }
+    width: 14.70196%; }
     .navbar-row .navbar-icon-col:last-child {
       margin-right: 0; }
   .navbar-row .navbar-search-col {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 78.67549%; }
+    width: 82.94039%; }
     .navbar-row .navbar-search-col:last-child {
       margin-right: 0; }
   .navbar-row .navbar-icon {
     width: 100%;
     margin: 0 0 0 0; }
+  .navbar-row .navbar-search-col {
+    margin: 40px 0 0 0; }
   .navbar-row .navbar-header-text {
     font-family: 'GIRegular';
     font-size: 32px;
@@ -96,4 +98,10 @@ html {
       margin: 16px 0 0 0; }
     .comic-card-row .comic-info-col .issue-preview-page {
       width: 13%; }
+    .comic-card-row .comic-info-col .slick-next {
+      right: 10px;
+      top: -20px; }
+    .comic-card-row .comic-info-col .slick-prev {
+      left: 612px;
+      top: -20px; }
 

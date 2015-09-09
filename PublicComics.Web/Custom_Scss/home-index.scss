@@ -10,16 +10,20 @@ $slick_dot_font_size: 30px;
     margin: 25px 0 0 0;
 
     .navbar-icon-col {
-        @include span-columns(1.5 of 12);
+        @include span-columns(2 of 12);
     }
 
     .navbar-search-col {
-        @include span-columns(9.5 of 12);
+        @include span-columns(10 of 12);
     }
 
     .navbar-icon {
         width: 100%;
         margin: 0 0 0 0;
+    }
+
+    .navbar-search-col {
+        margin: 40px 0 0 0;
     }
 
     .navbar-header-text {
@@ -98,6 +102,16 @@ $slick_dot_font_size: 30px;
 
         .issue-preview-page {
             width: 13%;
+        }
+
+        .slick-next {
+            right: 10px;
+            top: -20px;
+        }
+
+        .slick-prev {
+            left: 612px;
+            top: -20px;
         }
     }
 }
